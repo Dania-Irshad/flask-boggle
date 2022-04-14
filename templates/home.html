@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="alert-msg"></div>
+
+<h1>Boggle</h1>
+
+<div id="stats">
+    <b>STATS</b>
+    <p>HIGHEST SCORE: {{ highscore }}</p>
+    <p>NUMBER OF TIMES PLAYED: {{ played }}</p>
+    <p id="total"></p>
+</div>
+
+<div id="timer"></div>
+
+<div id="guesses" style="display: none;">
+    <b>GUESSES</b>
+</div>
+
+<div id="boggle-board">
+    <table>
+        <tbody>
+        {% for row in board %}
+            <tr>
+                {% for cell in row %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<button id="start">START</button>
+
+<div>
+    <form id="guess-form" method="POST" style="display: none;">
+        <label for="guess">Enter a Guess:</label>
+        <input type="text" name="guess" id="guess" autocomplete="off">
+        <button>SUBMIT</button>
+    </form>
+</div>
+
+{% endblock %}

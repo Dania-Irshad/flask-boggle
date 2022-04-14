@@ -1,0 +1,106 @@
+body {
+    background-color: #FFE4E1;
+    color: rgba(37, 34, 34, 0.842);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: cursive;
+    margin-top: 70px;
+    font-size: 90px;
+    cursor: default;
+    text-align: center;
+    color: rgb(185, 33, 33);
+    margin-bottom: 30px;
+}
+
+b {
+    font-size: 35px;
+}
+
+#boggle-board {
+    margin-left: 70px;
+}
+
+#boggle-board td {
+    background-color: #f5a0a0e1;
+    border: 4px solid black;
+    text-align: center;
+    font-size: 70px;
+    padding: 15px;
+    cursor:default;
+}
+ 
+form {
+    margin-top: 30px;
+    overflow: hidden;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 27px;
+}
+ 
+input {
+    width: 30%;
+    font-size: 27px;
+    background-color: #FFF0F5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+}
+
+input:focus {
+    outline: none;
+}
+ 
+#guess-form button {
+    width: 200px;
+    font-size: 27px;
+    cursor: pointer;
+    background: none;
+    border-radius: 40px;
+    color: rgba(37, 34, 34, 0.822);
+    border-style: dotted;
+}
+
+#start {
+    margin-top: 20px;
+    width: 200px;
+    font-size: 27px;
+    cursor: pointer;
+    margin-left: 70px;
+    background: none;
+    border-radius: 40px;
+    color: rgba(37, 34, 34, 0.822);
+    border-style: dotted;
+}
+
+#stats {
+    position: fixed;
+    top: 40px;
+    right: 25px;
+}
+
+#guesses{
+    text-align: center;
+}
+
+#timer {
+    bottom: 20px;
+    right: 30px;
+    position: fixed;
+    font-size: 70px;
+    color: #910614;
+}
+
+#alert-msg {
+    font-size: 20px;
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    left: 0
+}
